@@ -35,7 +35,7 @@ Aplikasi ini Open Source, jika kamu ingin berkontribusi dalam pengembangan untuk
 * Upload database "layanan_pengaduan.sql" ke DBMS Kesukaan kalian.
 * Jalankan [localhost](http://localhost/masyarakat) di web browser ( Chrome, Firefox, Edge, Safari )
 
-### 🙏 Thanks For Support
+### 📚 Reference
 * [Bootstrap](https://getbootstrap.com)
 * [Bootstrap Icons](https://icons.getbootstrap.com)
 
