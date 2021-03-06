@@ -35,7 +35,7 @@ Aplikasi ini Open Source, jika kamu ingin berkontribusi dalam pengembangan untuk
 * Upload database "layanan_pengaduan.sql" ke DBMS Kesukaan kalian.
 * Jalankan [localhost](http://localhost/masyarakat) di web browser ( Chrome, Firefox, Edge, Safari )
 
-### 📚 Reference
+### 🙏 Thanks For Support
 * [Bootstrap](https://getbootstrap.com)
 * [Bootstrap Icons](https://icons.getbootstrap.com)
 
@@ -44,6 +44,7 @@ Aplikasi ini Open Source, jika kamu ingin berkontribusi dalam pengembangan untuk
 - [x] Register
 - [x] Logout
 - [x] CRUD
+- [x] Print
 - [x] Dokumentasi Penggunaan
 
 #### 💖 Aplikasi dan project ini dibuat untuk latihan UKK Nafatul Adistianingrum SMK Negeri 1 Slawi 💖
