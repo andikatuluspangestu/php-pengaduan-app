@@ -1,5 +1,4 @@
 <?php
-
  session_start();
 
  include 'koneksi.php';
@@ -33,16 +32,31 @@
         <table class="table table-striped table-hover">
 
           <!-- Judul Halaman -->
-          <h3 class="text-center m-5 text-primary">Data Pengaduan</h3>
+          <thead>
+            <h2 class="text-center m-5 text-primary">Data Pengaduan</h2>
+          </thead>
 
           <thead>
 
-            <!-- Tombol Tambah Pengaduan -->
             <tr>
-              <th>
-                <a class="btn btn-success mb-3" href="tambah.php"> <i class="bi bi-pencil-square"></i> Tulis</a>
-                <a class="btn btn-danger mb-3" href="logout.php"> <i class="bi bi-logout"></i> Keluar</a>
-              </th>
+
+              <!-- Tombol Tambah Pengaduan -->
+              <td><a class="btn btn-success mb-3" href="tambah.php"> <i class="bi bi-pencil-square"></i> Tulis</a>
+              </td>
+
+              <!-- Tombol Print -->
+              <td>
+                <a class="btn btn-secondary mb-3" href="cetak.php"> <i class="bi bi-printer"></i> Cetak</a>
+              </td>
+
+              <!-- Kosongkan -->
+              <td></td>
+              <td></td>
+
+              <!-- Tombol Keluar -->
+              <td>
+                <a class="btn btn-danger mb-3" href="logout.php"> <i class="bi bi-box-arrow-right"></i> Keluar</a>
+              </td>
             </tr>
 
             <!-- Baris Judul Kolom Tabel -->
@@ -88,10 +102,10 @@
 
               <!-- Tombol Aksi -->
               <td>
-                <a class="btn btn-warning" href="haledit.php?id=<?php echo $row['id']; ?>">
+                <a class="btn btn-warning mt-3" href="haledit.php?id=<?php echo $row['id']; ?>">
                   <i class="bi bi-pencil-square"></i>
                 </a> 
-                <a class="btn btn-danger" href="hapus.php?id=<?php echo $row['id']; ?>">
+                <a class="btn btn-danger mt-3" href="hapus.php?id=<?php echo $row['id']; ?>">
                   <i class="bi bi-trash"></i>
                 </a>
               </td>
