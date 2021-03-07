@@ -12,7 +12,7 @@ Aplikasi ini Open Source, jika kamu ingin berkontribusi dalam pengembangan untuk
 ### 🔍 Fitur apakah yang tersedia?
 * Login
 * Register
-* Data Pengaduan ( Tambah, Edit, Hapus )
+* Data Pengaduan ( Menampilkan, Tambah, Update, Hapus )
 * Print
 * Logout
 
