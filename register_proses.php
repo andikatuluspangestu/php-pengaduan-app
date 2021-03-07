@@ -20,7 +20,7 @@ if(isset($submit)){
 
 	}else{
 
-		// Jika Form sudah di isi maka akan dibawa ke halaman TAMBAH PENGADUAN
+		// Jika Form sudah di isi maka akan dibawa ke halaman LOGIN
 		echo "<script>alert('Data berhasil di Tambah'); window.location=('login.php');</script>";
 	}
 }
