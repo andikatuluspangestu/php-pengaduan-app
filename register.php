@@ -20,7 +20,7 @@
   <div class="container">
 
     <!-- Buat Form dengan method POST -->
-    <form method="post" action="login_proses.php">
+    <form method="post" action="register_proses.php">
 
       <!-- Buat sebuah CARD dengan posisi absolute dengan top dan start 50% kemudian tengahkan objek -->
       <div class="card p-5 position-absolute top-50 start-50 translate-middle d-flex justify-content-center">
