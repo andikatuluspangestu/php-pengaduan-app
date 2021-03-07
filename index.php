@@ -46,7 +46,7 @@
 
               <!-- Tombol Print -->
               <td>
-                <a class="btn btn-secondary mb-3" href="cetak.php"> <i class="bi bi-printer"></i> Cetak</a>
+                <a class="btn btn-secondary mb-3" target="_blank" href="cetak.php"> <i class="bi bi-printer"></i> Cetak</a>
               </td>
 
               <!-- Kosongkan -->
