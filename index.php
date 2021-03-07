@@ -1,16 +1,15 @@
 <?php
+ session_start();
 
-  // Menghubungkan ke Database
-  include('koneksi.php'); 
+ include 'koneksi.php';
 
-   session_start();
+ if(isset($_SESSION['username'])){
 
-   if(isset($_SESSION['username'])){
-      $username = $_SESSION['username'];
-   } else{
-      header("location:login.php");
-   }
-   
+  $username = $_SESSION['username'];
+  } else{
+  header("location:login.php");
+  }
+
 ?>
 
 
@@ -40,17 +39,8 @@
             <!-- Tombol Tambah Pengaduan -->
             <tr>
               <th>
-                <a class="btn btn-success mb-3" href="tambah.php"> 
-                  <i class="bi bi-pencil-square"></i> Tulis
-                </a>
-
-                <a class="btn btn-success mb-3" href="cetak.php" target="_blank"> 
-                  <i class="bi bi-logout"></i> Cetak
-                  </a>
-
-                <a class="btn btn-danger mb-3" href="logout.php"> 
-                  <i class="bi bi-logout"></i> Keluar
-                </a>
+                <a class="btn btn-success mb-3" href="tambah.php"> <i class="bi bi-pencil-square"></i> Tulis</a>
+                <a class="btn btn-danger mb-3" href="logout.php"> <i class="bi bi-logout"></i> Keluar</a>
               </th>
             </tr>
 
