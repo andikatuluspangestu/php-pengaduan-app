@@ -24,10 +24,14 @@
     <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
 
-  </head>
-  <body class="bg-primary">
+    <!-- Google Fonts Poppins CDN -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
 
-    <div class="container card mt-5 ps-5 pe-5 pb-5">
+  </head>
+  <body class="bg-primary" style="font-family: 'Poppins', sans-serif;">
+
+    <div class="container card mt-5 ps-5 pe-5 pb-5 mb-5">
       <div class="row">
         <table class="table table-striped table-hover">
 
@@ -41,12 +45,12 @@
             <tr>
 
               <!-- Tombol Tambah Pengaduan -->
-              <td><a class="btn btn-success mb-3" href="tambah.php"> <i class="bi bi-pencil-square"></i> Tulis</a>
+              <td><a class="btn btn-success mb-3 border-0" href="tambah.php"> <i class="bi bi-pencil-square"></i> Tulis</a>
               </td>
 
               <!-- Tombol Print -->
               <td>
-                <a class="btn btn-secondary mb-3" target="_blank" href="cetak.php"> <i class="bi bi-printer"></i> Cetak</a>
+                <a class="btn btn-secondary mb-3 border-0" target="_blank" href="cetak.php"> <i class="bi bi-printer"></i> Cetak</a>
               </td>
 
               <!-- Kosongkan -->
@@ -55,7 +59,7 @@
 
               <!-- Tombol Keluar -->
               <td>
-                <a class="btn btn-danger mb-3" href="logout.php"> <i class="bi bi-box-arrow-right"></i> Keluar</a>
+                <a class="btn btn-danger mb-3 border-0" href="logout.php"> <i class="bi bi-box-arrow-right"></i> Keluar</a>
               </td>
             </tr>
 
