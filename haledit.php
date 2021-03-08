@@ -16,7 +16,6 @@
       
   }
 
-
   // Mengecek apakah di url ada nilai GET ID
   if (isset($_GET['id'])) {
 
