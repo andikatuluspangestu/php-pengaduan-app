@@ -1,23 +1,7 @@
-<?php
-
-  // Menghubungkan ke Database
-  include('koneksi.php'); 
-
-   session_start();
-
-   if(isset($_SESSION['username'])){
-      $username = $_SESSION['username'];
-   } else{
-      header("location:login.php");
-   }
-   
-?>
-
-
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Daftar Pengaduan</title>
+    <title>Cetak Pengaduan</title>
 
     <!-- Custom styles for this template-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
@@ -25,25 +9,27 @@
     <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
 
-  </head>
-  <body class="bg-primary">
+    <!-- Google Fonts Poppins CDN -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
 
-    <div class="container card mt-5 ps-5 pe-5 pb-5">
+  </head>
+  <body style="font-family: 'Poppins', sans-serif;">
+
+    <div class="container mt-5 ps-5 pe-5 pb-5 mb-5">
+
+      <h2 class="text-center m-5 text-primary">Data Pengaduan</h2>
+
       <div class="row">
         <table class="table table-striped table-hover">
 
-          <!-- Judul Halaman -->
-          <h3 class="text-center m-5 text-primary">Data Pengaduan</h3>
-
           <thead>
-
             <!-- Baris Judul Kolom Tabel -->
             <tr>
               <th>No</th>
-              <th>Tanggal Pengaduan</th>
+              <th>Tanggal</th>
               <th>Laporan</th>
               <th>Bukti</th>
-              <th>Action</th>
             </tr>
 
           </thead>
@@ -77,7 +63,6 @@
               <td>
                 <img class="rounded m-1" src="gambar/<?php echo $row['bukti']; ?>" width=100>
               </td>
-
             </tr>
          
             <?php
@@ -90,9 +75,8 @@
       </div>
     </div>
 
-
-    <!-- Fungsi Print -->
-    <script>
+    <!-- Fungsi Cetak Javascript -->
+    <script type="text/javascript">
       window.print();
     </script>
 
