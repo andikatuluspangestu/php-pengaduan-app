@@ -3,6 +3,20 @@
   // Memanggil file koneksi.php untuk membuat koneksi
   include 'koneksi.php';
 
+  // Memulai Session
+  session_start();
+
+  if(isset($_SESSION['username'])){
+
+      $username = $_SESSION['username'];
+
+  } else{
+
+      header("location:login.php");
+      
+  }
+
+
   // Mengecek apakah di url ada nilai GET ID
   if (isset($_GET['id'])) {
 
@@ -26,10 +40,14 @@
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
 
-  </head>
-  <body class="bg-primary">
+    <!-- Google Fonts Poppins CDN -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap" rel="stylesheet">
 
-      <div class="container mt-5 p-5 card d-flex justify-content-center">
+  </head>
+  <body class="bg-primary" style="font-family: 'Poppins', sans-serif;">
+
+      <div class="container mt-5 p-5 card d-flex justify-content-center shadow-lg">
 
         <!-- Buat Form dengan method POST -->
         <form method="POST" action="edit.php" enctype="multipart/form-data" >
@@ -51,7 +69,9 @@
           <div>
             <br>
             <label>Pengaduan</label>
-            <input class="form-control" type="text" name="pengaduan" value="<?php echo $data['pengaduan']; ?>" />
+            <textarea class="form-control" type="text" name="pengaduan">
+            <?php echo $data['pengaduan']; ?>
+            </textarea>
           </div>
 
           <!-- Tombol Simpan Perubahan -->
