@@ -3,6 +3,19 @@
   //agar index terhubung dengan database, maka koneksi sebagai penghubung harus di include
   include('koneksi.php');
 
+  // Memulai Session
+  session_start();
+
+  if(isset($_SESSION['username'])){
+
+      $username = $_SESSION['username'];
+
+  } else{
+
+      header("location:login.php");
+      
+  }
+
 ?>
 
 <!DOCTYPE html>
@@ -12,11 +25,15 @@
 
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-    
-  </head>
 
-  <!-- Background Warna Biru -->
-  <body class="bg-primary">
+    <!-- Google Fonts Poppins CDN -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+
+</head>
+  
+  <!-- Background warna biru -->
+  <body class="bg-primary" style="font-family: 'Poppins', sans-serif;">
     
     <!-- Buat Sebuah Container dengan CARD lalu beri margin-top 5 dan padding 5, lalu tengahkan objek menggunakan 'd-flex justify-content-center' -->
     <div class="container card mt-5 p-5 d-flex justify-content-center">
