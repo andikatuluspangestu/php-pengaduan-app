@@ -4,7 +4,7 @@
 
 ### 🎶 Pengenalan
 Aplikasi Sistem Pencatatan Pengaduan Masyarakat merupakan sebuah aplikasi berbasis WEB yang dibuat untuk memudahkan Pencatatan Data Pengaduan Masyarakat secara sederhana, mudah dan cepat. 
-Dibuat dengan Native PHP dan Framework CSS Bootstrap 5 Beta.
+Dibuat dengan PHP Native dan Framework CSS Bootstrap 5 Beta.
 	
 ### 🤝 Bagaimana saya berkontribusi?
 Aplikasi ini Open Source, jika kamu ingin berkontribusi dalam pengembangan untuk belajar silahkan Clone Repo ini dan Pull Requests.
@@ -39,6 +39,7 @@ Aplikasi ini Open Source, jika kamu ingin berkontribusi dalam pengembangan untuk
 ### ☕ Referensi
 * [Bootstrap](https://getbootstrap.com)
 * [Bootstrap Icons](https://icons.getbootstrap.com)
+* [Google Fonts](https://fonts.google.com)
 
 ### 📜 ToDo List
 - [x] Login
