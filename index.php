@@ -26,19 +26,18 @@
 
     <!-- Google Fonts Poppins CDN -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap" rel="stylesheet">
 
   </head>
   <body class="bg-primary" style="font-family: 'Poppins', sans-serif;">
 
     <div class="container card mt-5 ps-5 pe-5 pb-5 mb-5">
+
+      <!-- Judul Halaman -->
+      <h2 class="text-center m-5 text-primary">Data Pengaduan</h2>
+
       <div class="row">
         <table class="table table-striped table-hover">
-
-          <!-- Judul Halaman -->
-          <thead>
-            <h2 class="text-center m-5 text-primary">Data Pengaduan</h2>
-          </thead>
 
           <thead>
 
