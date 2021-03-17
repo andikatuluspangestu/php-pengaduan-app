@@ -37,7 +37,7 @@
   <body class="bg-white" style="font-family: 'Poppins', sans-serif;">
 
     <!-- Buat sebuah Container CARD dengan mt-5, mb-5 (margin-top-bottom), padding (pe-pb) -->
-    <div class=" mt-5 ps-5 pe-5 pb-5 mb-5 rounded-pill">
+    <div class="mt-5 ps-5 pe-5 pb-5 mb-5 rounded-pill">
 
       <!-- Judul Halaman -->
       <h2 class="text-center m-5 text-primary">Data Pengaduan</h2>
@@ -52,7 +52,7 @@
             <tr>
               <td>
                 <!-- Tombol Tambah Pengaduan -->
-                <a class="btn btn-success mb-3 border-0" href="tambah.php"><i class="bi bi-pencil-square"></i> Tulis</a>
+                <a class="btn btn-success mb-3 border-0" href="haltambah.php"><i class="bi bi-pencil-square"></i> Tulis</a>
                 <!-- Tombol Print -->
                 <a class="btn btn-secondary mb-3 border-0" target="_blank" href="cetak.php"><i class="bi bi-printer"></i> Cetak</a>
                 <!-- Tombol Keluar -->
