@@ -38,6 +38,9 @@ Aplikasi ini Open Source, jika kamu ingin berkontribusi dalam pengembangan untuk
 
 ### ☕ Referensi
 * [Bootstrap](https://getbootstrap.com)
+* [Icon Bootstrap](https://icons.getbootstrap.com/)
+* [Google Fonts](https://fonts.google.com)
+* [CKEditor 5](https://ckeditor.com/)
 
 ### 📜 ToDo List
 - [x] Login
