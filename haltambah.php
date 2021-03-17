@@ -39,7 +39,7 @@
     <div class="container card mt-5 p-5 d-flex justify-content-center">
 
         <!-- Buatlah Form dengan method POST -->
-        <form method="POST" action="tambah_proses.php" enctype="multipart/form-data" >
+        <form method="POST" action="proses_tambah.php" enctype="multipart/form-data" >
 
           <!-- Teks Judul Tambah Pengaduan -->
           <h3 class="text-center text-primary"> Tambah Pengaduan</h3>
