@@ -43,6 +43,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap" rel="stylesheet">
 
+    <!-- CKEditor -->
+    <script src="https://cdn.ckeditor.com/ckeditor5/26.0.0/classic/ckeditor.js"></script>
+
   </head>
   <body class="bg-primary" style="font-family: 'Poppins', sans-serif;">
 
@@ -68,7 +71,7 @@
           <div>
             <br>
             <label>Pengaduan</label>
-            <textarea class="form-control" type="text" name="pengaduan">
+            <textarea class="form-control ckeditor" type="text" name="pengaduan" id="editor">
             <?php echo $data['pengaduan']; ?>
             </textarea>
           </div>
@@ -97,6 +100,15 @@
 
       </form>
       </div>
+
+      <!-- Javascript CKEditor -->
+      <script>
+        ClassicEditor
+          .create( document.querySelector( '#editor' ) )
+          .catch( error => {
+            console.error( error );
+          } );
+      </script>
       
   </body>
 </html>
