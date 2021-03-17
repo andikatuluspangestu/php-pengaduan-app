@@ -30,6 +30,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap" rel="stylesheet">
 
+    <!-- CKEditor -->
+    <script src="https://cdn.ckeditor.com/ckeditor5/26.0.0/classic/ckeditor.js"></script>
+
 </head>
   
   <!-- Background warna biru -->
@@ -55,7 +58,7 @@
           <div>
             <br>
             <label>Tulis Pengaduan</label>
-            <textarea class="form-control m-1" type="text" name="pengaduan" /></textarea>
+            <textarea class="form-control m-1 editor" id="editor" type="text" name="pengaduan" /></textarea>
           </div>
 
           <!-- Buatlah div lalu isi dengan LABEL (OPSIONAL) dan Form input dengan class 'form-control' lalu beri margin 1 -->
@@ -76,6 +79,15 @@
 
         </form>
       </div>
+
+      <!-- Javascript CKEditor -->
+      <script>
+        ClassicEditor
+          .create( document.querySelector( '#editor' ) )
+          .catch( error => {
+            console.error( error );
+          } );
+      </script>
 
       <!-- Footer -->
       <?php include 'Template/footer.php'; ?>
