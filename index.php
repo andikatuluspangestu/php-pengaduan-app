@@ -44,12 +44,9 @@
 
       <div class="row">
 
-        <!-- Buatlah sebuah TABEL dengan class yang telah ditentukan -->
-        <table class="table table-striped table-hover">
-
-          <thead>
-
-            <tr>
+        <!-- Tombol -->
+        <table>
+          <tr>
               <td>
                 <!-- Tombol Tambah Pengaduan -->
                 <a class="btn btn-success mb-3 border-0" href="haltambah.php"><i class="bi bi-pencil-square"></i> Tulis</a>
@@ -63,25 +60,26 @@
               <td></td>
               <td>
                 <form method="post">
-
-                  <!-- Hidden Form Search -->
-                  <input type="text" name="nt" placeholder="cari ..." width="2px" hidden="">
-                  <input type="submit" name="cari" value="cari" hidden="">
-
                   <!-- Input Search Form -->
-                  <div class="input-group mb-3">
+                  <div class="input-group mb-3">  
                     <span class="input-group-text" id="basic-addon1"> <i class="bi bi-search"></i> </span>
-                    <input type="text" name="nt" name="cari" class="form-control" placeholder="Ketik lalu Enter untuk mencari" aria-label="Username" aria-describedby="basic-addon1">
+                    <input type="text" name="nt" style="width: 1rem; font-size: 12px; font-weight: bold;" class="form-control" placeholder="Ketik lalu Enter untuk mencari" aria-label="Username" aria-describedby="basic-addon1">
+                    <input type="submit" name="cari" value="cari" hidden="">
                   </div>
 
                 <form>
               </td>
             </tr>
+        </table>
 
+        <!-- Buatlah sebuah TABEL dengan class yang telah ditentukan -->
+        <table class="table table-responsive table-striped table-hover">
+
+          <thead>
             <!-- Baris Judul Kolom Tabel -->
             <tr class="bg-primary text-white">
               <th>No</th>
-              <th>Tanggal Pengaduan</th>
+              <th>Tanggal</th>
               <th>Laporan</th>
               <th>Bukti</th>
               <th class="text-center">Action</th>
