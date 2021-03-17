@@ -28,6 +28,7 @@ Aplikasi ini Open Source, jika kamu ingin berkontribusi dalam pengembangan untuk
 * Versi PHP 7 atau lebih baru.
 * Web Browser ( Chrome, Firefox, Safari & Opera )
 * XAMPP ( Atau apps web server lain )
+* Internet Connection ( This Code With CDN )
 
 ### 💡 Cara Instalasi 
 * Download atau fork lalu clone di Komputer kalian.
