@@ -49,7 +49,5 @@ Aplikasi ini Open Source, jika kamu ingin berkontribusi dalam pengembangan untuk
 - [x] Print
 - [x] Dokumentasi Penggunaan
 
-#### 💖 Aplikasi dan project ini dibuat untuk latihan UKK Nafatul Adistianingrum SMK Negeri 1 Slawi 💖
-
 ### 📜 License 
 **Aplikasi Pencatatan Pengaduan Masyarakat is open-sourced software licensed under the MIT license**
